@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Cake</title>
+</head>
+<body>
+
+    <div>
+        <button id="boton-menu"><img src="./assets/menu.png"></button>
+        <button id="boton-carrito"><img src="./assets/cart.png"></button>
+    </div>
+
+    <h1 class="center-header">Bienvenido a nuestra tienda <span>Cakelicious</span></h1>
+
+    <p>
+        En cake nuestra mision es llevar los mejores pasteles con el precio
+        mas barato y la mejor calidad hasta la puerta de tu casa 
+        <br>
+        La mejor forma de empezar el día y acabar la noche.
+    <p>
+
+    <h2 class="center-header">Sabores</h2><br>
+    <div>
+        <ul id="lista-sabores">
+            <li>Fresa</li>
+            <li>Chocolate</li>
+            <li>Kiwi</li>
+            <li>Arandano</li>
+            <li>Mango</li>
+        </ul>
+    </div>
+
+    <h3 class="center-header">Adornos</h3>
+    <div>
+        <ul id="lista-adornos">
+            <li>Letras personalizadas......................X USD</li>
+            <li>Velas de cumpleanios......................X USD</li>
+            <li>Bombas de humo de color......................X USD</li>
+        </ul>
+    </div>
+    <h3 class="center-header">Tamano</h3>
+    <div>
+        <ul id="lista-tamano">
+            <li>Chico......................X USD</li>
+            <li>Mediano......................X USD</li>
+            <li>Grande......................X USD</li>
+        </ul>
+    </div>
+    <p>Formulario</p>
+    <form>
+        <label for="campo-nombre">Ingresa tu nombre<br></label>
+        <input type="text"><br>
+        <label for="campo-telefono">Ingresa tu telefono<br></label>
+        <input type="tel" id="campo-telefono" name="campo-telefono"><br>
+        <label for="campo-nombre">Ingresa tu correo electronico<br></label>
+        <input type="email" id="campo-correo" name="campo-correo"><br>
+        <div>
+            <!--Se agrega el mismo name de los radio buttons para que pertenezcan al mismo grupo-->
+
+            <p>Selecciona un tamano:</p>
+            <label for="radio-chico">Chico</label>
+            <input type="radio" id="radio-chico" name ="size" value="chico"><br>
+            <label for="radio-mediano">Mediano</label>
+            <input type="radio" id="radio-mediano" name ="size" value="mediano"><br>
+            <label for="radio-grande">Grande</label>
+            <input type="radio" id="radio-grande" name ="size" value="grande">
+        </div>
+        <div>
+            <!--Se usan checkbox para permitir multiseleccion de sabores-->
+            <p>Selecciona 1 o 2 sabores</p>
+            <label for="checkbox-fresa">Sabor fresa</label>
+            <input type="checkbox" id="checkbox-fresa" name="grupo-sabores"><br>
+            <label for="checkbox-chocolate">Sabor chocolate</label>
+            <input type="checkbox" id="checkbox-chocolate" name="grupo-sabores"><br>
+            <label for="checkbox-kiwi">Sabor kiwi</label>
+            <input type="checkbox" id="checkbox-kiwi" name="grupo-sabores"><br>
+            <label for="checkbox-arandano">Sabor arandano</label>
+            <input type="checkbox" id="checkbox-arandano" name="grupo-sabores"><br>
+            <label for="checkbox-mango">Sabor mango</label>
+            <input type="checkbox" id="checkbox-mango" name="grupo-sabores"><br>
+        </div>
+        <label for="submit-buttn">Pedir pedido</label>
+        <input type="submit" id="submit-buttn">
+    </form>
+    
+    
+</body>
+</html>
